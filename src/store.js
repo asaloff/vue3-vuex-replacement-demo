@@ -9,7 +9,7 @@ function increment() {
   state.number++;
 }
 
-watch(state, () => {window.rootState = { ...state };}, { deep: true, immediate: true })
+watch(state, () => {window.rootState = readonly({ ...state })}, { deep: true, immediate: true })
 
 export default readonly({
   state,

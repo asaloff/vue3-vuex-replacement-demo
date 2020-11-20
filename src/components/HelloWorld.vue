@@ -21,13 +21,10 @@ export default {
 
     const { number, double } = toRefs(state)
 
-    const dateString = '4/29/2019'
-
     return {
       number,
       double,
       increment,
-      dateString,
     }
   }
 }
